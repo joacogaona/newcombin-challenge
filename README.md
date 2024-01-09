@@ -5,7 +5,7 @@ Este README proporciona instrucciones para configurar y ejecutar el proyecto.
 ## Configuración y Ejecución Client
 
 - Variables de ambiente: Crea un archivo .env siguiendo la estructura del archivo .env.example y agrega los valores de las 2 variables (enviadas por email)
-- Ubicarse en el directorio: `cd client`
+- Ubicarse en el directorio: `cd newcombin-challenge`
 - Instalar las dependencias: `npm install`
 - Ejecutar el servidor: `npm run dev`
 

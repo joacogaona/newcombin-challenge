@@ -5,16 +5,9 @@ import { Member } from "../types/members";
 import { useAuth } from "../contexts/AuthContext";
 import { useEffect } from "react";
 import Input from "../components/Input";
+import { invalidNameOrAddressErrors } from "../utils/validationErrors";
 
-function invalidNameOrAddressErrors(value: string, inputName: string): string {
-    if (value.length < 2) {
-        return `${inputName} must be at least 2 characters`
-    } else if (value[0] === ' ' || value[value.length - 1] === ' ') {
-        return `${inputName} must not have whitespaces to the sides`
-    }
-    return ''
 
-}
 
 const Form = () => {
     const { token } = useAuth()
